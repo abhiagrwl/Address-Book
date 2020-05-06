@@ -21,17 +21,17 @@ public class AddressBook
             System.out.println("------------------");
             System.out.println("Name: "+con.getName());
             System.out.println("Address: "+con.getAddress());
-            System.out.println("Phone: "+con.getPhone())
+            System.out.println("Phone: "+con.getPhone());
 		}
 
 		public void sortContacts()
-		{	Collections.sort(addressBook);
-
+		{	
+			Collections.sort(addressBook);
 			for(Contact con : addressBook){
             System.out.println("------------------");
             System.out.println("Name: "+con.getName());
             System.out.println("Address: "+con.getAddress());
-            System.out.println("Phone: "+con.getPhone())
+            System.out.println("Phone: "+con.getPhone());
 		}
 
 		public void delete(final Contact contact)

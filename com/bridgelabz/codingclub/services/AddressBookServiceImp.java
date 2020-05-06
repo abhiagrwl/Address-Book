@@ -8,42 +8,43 @@ public class AddressBookServiceImp implements AddressBookService
 {
 	
 	final AddressBook addressBook;
-	public AddressBookServiceImp(final AddressBook addressBook)
+	
+    public AddressBookServiceImp(final AddressBook addressBook)
 	{
 		this.addressBook = addressBook;
 	}
 
 
 
-@Override
-public void addContact()
-{
+    @Override
+    public void addContact()
+    {
 
-	    System.out.println("Enter First name: ");
-        final String firstName = AddressBookUtil.getUserString();
+    	    System.out.println("Enter First name: ");
+            final String firstName = AddressBookUtil.getUserString();
 
-        System.out.println("Enter Last name: ");
-        final String lastName = AddressBookUtil.getUserString();
+            System.out.println("Enter Last name: ");
+            final String lastName = AddressBookUtil.getUserString();
 
-        System.out.println("Enter Address: ");
-        final String address = AddressBookUtil.getUserString();
+            System.out.println("Enter Address: ");
+            final String address = AddressBookUtil.getUserString();
 
-        System.out.println("Enter City: ");
-        final String city =  AddressBookUtil.getUserString();
+            System.out.println("Enter City: ");
+            final String city =  AddressBookUtil.getUserString();
 
-        System.out.println("Enter State: ");
-        final String state = AddressBookUtil.getUserString();
+            System.out.println("Enter State: ");
+            final String state = AddressBookUtil.getUserString();
 
-        System.out.println("Enter Phone number: ");
-        final String phone = AddressBookUtil.getUserString();
+            System.out.println("Enter Phone number: ");
+            final String phone = AddressBookUtil.getUserString();
 
-        System.out.println("Enter Zip code: ");
-        final String zip = AddressBookUtil.getUserString();
+            System.out.println("Enter Zip code: ");
+            final String zip = AddressBookUtil.getUserString();
 
-        final Contact contact = new Contact(firstName,lastName, address, city, state, phone, zip);
-        addressBook.addToAddressBook(contact)
+            final Contact contact = new Contact(firstName,lastName, address, city, state, phone, zip);
+            addressBook.addToAddressBook(contact);
 
-}
+    }
 
     @Override
     public void editContact() 
@@ -57,8 +58,8 @@ public void addContact()
     {
     	System.out.println("Enter which contact you want to delete via name");
         final String firstName = AddressBookUtil.getUserString();
-        static index=-1;
-            for (int i=0;i<addressBook.size();i++)
+        int index=-1;
+            for (int i=0; i<=addressBook.size(); i++)
             {
                 if (addressBook[i].getName().equals(firstName))
                     index = i;

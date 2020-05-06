@@ -1,6 +1,7 @@
 package com.bridgelabz.codingclub.services;
 
-public interface AddressBookService {
+public interface AddressBookService 
+{
     void addContact();
     void editContact();
     void deleteContact();
