@@ -1,6 +1,7 @@
 package com.bridgelabz.codingclub.models;
 
-public class Contact{
+public class Contact
+{
     // data
     final private String firstName;
     final private String lastName;
@@ -11,7 +12,8 @@ public class Contact{
     private String phone;
 
     // constructors
-    public Contact(final String firstName, final String lastName, final String address, final String city, final String state, final String zip, final String phone){
+    public Contact(final String firstName, final String lastName, final String address, final String city, final String state, final String zip, final String phone)
+    {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -22,7 +24,8 @@ public class Contact{
     }
 
 /*
-    public Contact(final String firstName, final String lastName){
+    public Contact(final String firstName, final String lastName)
+    {
         this(firstName, lastName, null, null, null, null, null);
     }
 */
